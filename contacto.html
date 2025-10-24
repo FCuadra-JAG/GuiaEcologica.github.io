@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Guía Ecológica de Mi Región</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Contacto</h1>
+  <p>Escríbenos para preguntas, reservas o voluntariado.</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="reservas.html">Reservas Naturales</a></li>
+    <li><a href="fauna.html">Fauna y Flora</a></li>
+    <li><a href="actividades.html">Actividades Sostenibles</a></li>
+    <li><a href="voluntariado.html">Voluntariado</a></li>
+    <li><a href="contacto.html" class="active">Contacto</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section>
+    <h2>Formulario de contacto (ejemplo)</h2>
+    <p>Si deseas que el formulario envíe correos reales necesitarás configurar un servicio (Formspree, Netlify Forms, etc.). Aquí tienes un formulario HTML básico que puedes usar con esos servicios:</p>
+
+    <!-- Ejemplo (no envía sin backend/service) -->
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+
+      <label for="email">Correo electrónico:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="asunto">Asunto:</label><br>
+      <input type="text" id="asunto" name="asunto"><br><br>
+
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="6" required></textarea><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <h3>Información de contacto alternativa</h3>
+    <p>Oficina de Turismo Local: <strong>+505 1234 5678</strong></p>
+    <p>Correo: <strong>info@guiaecologica.example</strong></p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Guía Ecológica de Mi Región — Contacto</p>
+</footer>
+
+</body>
+</html>
