@@ -1,48 +1,47 @@
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8f5;
-        }
-        header {
-            background-color: #2e8b57;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #3cb371;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        nav li {
-            float: left;
-        }
-        nav li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        nav li a:hover {
-            background-color: #2e8b57;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 15px 0;
-            background-color: #3cb371;
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f5;
+}
+header {
+    background-color: #2e8b57;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+nav {
+    background-color: #3cb371;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav li a:hover {
+    background-color: #2e8b57;
+}
+main {
+    padding: 20px;
+}
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #3cb371;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
