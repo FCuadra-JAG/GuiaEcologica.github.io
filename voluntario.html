@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Guía ecológica de Nicaragua — Voluntariado</title>
+    <style>
+        :root{
+            --bg:#f4fbf6; --card:#ffffff; --accent:#2e8b57; --muted:#666;
+            --danger:#c0392b; --success:#27ae60;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        body{margin:0;background:linear-gradient(180deg,var(--bg),#eef7ef 60%);color:#123;line-height:1.45}
+        header{background:var(--accent);color:white;padding:1.25rem 1rem}
+        header h1{margin:0;font-size:1.25rem}
+        nav{margin-top:.5rem}
+        nav a{color:rgba(255,255,255,.9);text-decoration:none;margin-right:1rem;font-size:.95rem}
+        main{max-width:980px;margin:1.25rem auto;padding:0 1rem}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+        .card{background:var(--card);border-radius:10px;padding:1rem;box-shadow:0 6px 18px rgba(10,20,10,.06)}
+        .card h2{margin-top:0;font-size:1.05rem;color:var(--accent)}
+        .muted{color:var(--muted);font-size:.95rem}
+        .list{margin:0;padding-left:1.1rem}
+        .tips li{margin-bottom:.45rem}
+        form{margin-top:0}
+        .field{display:flex;flex-direction:column;margin-bottom:.75rem}
+        label{font-weight:600;margin-bottom:.25rem}
+        input[type="text"],input[type="email"],input[type="tel"],input[type="date"],select,textarea{
+            padding:.5rem .6rem;border:1px solid #d7e6db;border-radius:6px;font-size:.95rem;background:white
+        }
+        textarea{min-height:100px;resize:vertical}
+        .row{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}
+        .checkboxes{display:flex;flex-wrap:wrap;gap:.5rem}
+        .small{font-size:.88rem;color:var(--muted)}
+        .error{color:var(--danger);font-size:.88rem;margin-top:.35rem}
+        .success{color:var(--success);font-weight:700}
+        button{background:var(--accent);color:white;border:0;padding:.6rem .9rem;border-radius:8px;font-weight:700;cursor:pointer}
+        button[disabled]{opacity:.6;cursor:not-allowed}
+        footer{margin:2rem 0 4rem;text-align:center;color:var(--muted);font-size:.9rem}
+        @media (max-width:640px){ .row{grid-template-columns:1fr} }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guía ecológica de Nicaragua</h1>
+        <nav aria-label="Navegación principal">
+            <a href="#reservas">Reservas y parques</a>
+            <a href="#fauna">Fauna y flora</a>
+            <a href="#actividades">Actividades sostenibles</a>
+            <a href="#consejos">Consejos ecológicos</a>
+            <a href="#voluntariado">Voluntariado</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="reservas" class="card" aria-labelledby="r-title">
+            <h2 id="r-title">Reservas nacionales y áreas protegidas</h2>
+            <p class="muted">Explora áreas protegidas en Nicaragua: bosques tropicales, volcanes, humedales y costas marinas.</p>
+            <div class="grid" style="margin-top:.75rem">
+                <article class="card">
+                    <strong>Reserva de Biosfera Bosawás</strong>
+                    <p class="small">Una de las mayores selvas tropicales de Centroamérica, clave para la conservación de especies y comunidades indígenas.</p>
+                </article>
+                <article class="card">
+                    <strong>Reserva Natural Indio Maíz</strong>
+                    <p class="small">Bosque húmedo en el Caribe sur, importante para la biodiversidad y aves migratorias.</p>
+                </article>
+                <article class="card">
+                    <strong>Volcán Mombacho y Laguna de Apoyo</strong>
+                    <p class="small">Bosques en pendientes volcánicas y lagunas de agua dulce cercanas a Granada, idóneos para ecoturismo responsable.</p>
+                </article>
+                <article class="card">
+                    <strong>Isla de Ometepe</strong>
+                    <p class="small">Formada por los volcanes Concepción y Maderas en el lago Cocibolca; ecosistemas únicos y comunidades locales.</p>
+                </article>
+                <article class="card">
+                    <strong>Isla Juan Venado y Estero Padre Ramos</strong>
+                    <p class="small">Manglares y playas en la costa pacífica importantes para la anidación de tortugas marinas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="fauna" class="card" aria-labelledby="f-title" style="margin-top:1rem">
+            <h2 id="f-title">Fauna y flora de Nicaragua</h2>
+            <p class="muted">Especies emblemáticas y recomendaciones para su observación sin impacto.</p>
+            <ul class="list">
+                <li><strong>Tortugas marinas:</strong> anidación de tortugas oliva y verde en playas protegidas (respeta vallas y horarios).</li>
+                <li><strong>Mamíferos y primates:</strong> monos aulladores y monos araña en bosques húmedos; mamíferos mayores en áreas protegidas.</li>
+                <li><strong>Aves migratorias y residentes:</strong> amplias oportunidades de observación, especialmente en humedales y manglares.</li>
+                <li><strong>Flora:</strong> bosques tropicales con especies de árboles nativos, orquídeas y plantas endémicas en islas y volcanes.</li>
+            </ul>
+        </section>
+
+        <section id="actividades" class="card" aria-labelledby="a-title" style="margin-top:1rem">
+            <h2 id="a-title">Actividades sostenibles</h2>
+            <p class="muted">Opciones de bajo impacto: senderismo guiado, monitoreo de tortugas, restauración y trabajo con comunidades.</p>
+            <div class="grid" style="margin-top:.75rem">
+                <div class="card">
+                    <strong>Senderismo interpretativo</strong>
+                    <p class="small">Guias locales muestran ecosistemas en Mombacho, Ometepe y Bosawás.</p>
+                </div>
+                <div class="card">
+                    <strong>Monitoreo de tortugas</strong>
+                    <p class="small">Participación en programas de protección y conteo en playas protegidas (temporadas específicas).</p>
+                </div>
+                <div class="card">
+                    <strong>Proyectos de restauración</strong>
+                    <p class="small">Reforestación con especies nativas y recuperación de manglares en la costa pacífica y Caribe.</p>
+                </div>
+                <div class="card">
+                    <strong>Educación comunitaria</strong>
+                    <p class="small">Talleres y actividades con escuelas y comunidades locales para promover prácticas sostenibles.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="consejos" class="card" aria-labelledby="c-title" style="margin-top:1rem">
+            <h2 id="c-title">Consejos ecológicos</h2>
+            <ul class="list tips">
+                <li>Mantén la distancia y no alimentes a la fauna.</li>
+                <li>Lleva tu basura y minimiza empaques de un solo uso.</li>
+                <li>Camina por senderos marcados para proteger la vegetación.</li>
+                <li>Respeta las temporadas de anidación y las indicaciones de los guardaparques.</li>
+            </ul>
+        </section>
+
+        <section id="voluntariado" class="card" aria-labelledby="v-title" style="margin-top:1rem">
+            <h2 id="v-title">Formulario de voluntariado</h2>
+            <p class="muted">Únete a proyectos en Nicaragua. Rellena el formulario y nos pondremos en contacto con información sobre oportunidades locales.</p>
+
+            <form id="volForm" novalidate>
+                <div class="row">
+                    <div class="field">
+                        <label for="nombre">Nombre *</label>
+                        <input id="nombre" name="nombre" type="text" minlength="2" required aria-required="true" />
+                        <div class="error" id="err-nombre" aria-live="polite"></div>
+                    </div>
+
+                    <div class="field">
+                        <label for="apellido">Apellidos *</label>
+                        <input id="apellido" name="apellido" type="text" minlength="2" required aria-required="true" />
+                        <div class="error" id="err-apellido" aria-live="polite"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field">
+                        <label for="email">Correo electrónico *</label>
+                        <input id="email" name="email" type="email" required aria-required="true" />
+                        <div class="error" id="err-email" aria-live="polite"></div>
+                    </div>
+
+                    <div class="field">
+                        <label for="telefono">Teléfono</label>
+                        <input id="telefono" name="telefono" type="tel" pattern="^\+?[0-9\s\-\(\)]{7,20}$" placeholder="+505 6000 0000" />
+                        <div class="small">Incluye código de país (ej. +505) si es posible (opcional).</div>
+                        <div class="error" id="err-telefono" aria-live="polite"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field">
+                        <label for="fecha">Fecha de disponibilidad *</label>
+                        <input id="fecha" name="fecha" type="date" required />
+                        <div class="error" id="err-fecha" aria-live="polite"></div>
+                    </div>
+
+                    <div class="field">
+                        <label for="duracion">Duración disponible *</label>
+                        <select id="duracion" name="duracion" required>
+                            <option value="">-- Elige una opción --</option>
+                            <option value="un-dia">Un día</option>
+                            <option value="fines-semana">Fin de semana</option>
+                            <option value="1-semana">1 semana</option>
+                            <option value="mas">Más de una semana</option>
+                        </select>
+                        <div class="error" id="err-duracion" aria-live="polite"></div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Habilidades e intereses (marca al menos 1) *</label>
+                    <div class="checkboxes" role="group" aria-labelledby="skillsGroup">
+                        <label><input type="checkbox" name="skills" value="guiado"> Guiado e interpretación</label>
+                        <label><input type="checkbox" name="skills" value="restauracion"> Restauración y vivero</label>
+                        <label><input type="checkbox" name="skills" value="monitoreo"> Monitoreo de fauna (p. ej. tortugas)</label>
+                        <label><input type="checkbox" name="skills" value="educacion"> Educación ambiental</label>
+                        <label><input type="checkbox" name="skills" value="logistica"> Logística y apoyo</label>
+                    </div>
+                    <div class="error" id="err-skills" aria-live="polite"></div>
+                </div>
+
+                <div class="field">
+                    <label for="preferencias">Preferencias de actividad</label>
+                    <select id="preferencias" name="preferencias" multiple size="3" aria-multiselectable="true">
+                        <option value="senderismo">Senderismo interpretativo</option>
+                        <option value="restauracion">Reforestación</option>
+                        <option value="limpieza">Limpieza de áreas</option>
+                        <option value="educacion">Talleres educativos</option>
+                        <option value="tortugas">Protección de tortugas marinas</option>
+                    </select>
+                    <div class="small">Mantén presionada Ctrl/Cmd para seleccionar varias.</div>
+                </div>
+
+                <div class="field">
+                    <label for="experiencia">Experiencia previa (opcional)</label>
+                    <textarea id="experiencia" name="experiencia" placeholder="Describe experiencia relevante, certificaciones o comentarios"></textarea>
+                </div>
+
+                <div class="field">
+                    <label><input id="acepto" name="acepto" type="checkbox" required> Acepto participar como voluntario y seguir las normas de las reservas y comunidades locales *</label>
+                    <div class="error" id="err-acepto" aria-live="polite"></div>
+                </div>
+
+                <div style="display:flex;gap:.75rem;align-items:center">
+                    <button type="submit">Enviar solicitud</button>
+                    <div id="form-msg" role="status" aria-live="polite"></div>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            © Guía ecológica de Nicaragua — Promoviendo conservación y turismo responsable
+        </footer>
+    </main>
+
+    <script>
+        // Validación y manejo del formulario
+        (function(){
+            const form = document.getElementById('volForm');
+            const fields = {
+                nombre: document.getElementById('nombre'),
+                apellido: document.getElementById('apellido'),
+                email: document.getElementById('email'),
+                telefono: document.getElementById('telefono'),
+                fecha: document.getElementById('fecha'),
+                duracion: document.getElementById('duracion'),
+                skills: Array.from(document.querySelectorAll('input[name="skills"]')),
+                acepto: document.getElementById('acepto')
+            };
+            const errs = {
+                nombre: document.getElementById('err-nombre'),
+                apellido: document.getElementById('err-apellido'),
+                email: document.getElementById('err-email'),
+                telefono: document.getElementById('err-telefono'),
+                fecha: document.getElementById('err-fecha'),
+                duracion: document.getElementById('err-duracion'),
+                skills: document.getElementById('err-skills'),
+                acepto: document.getElementById('err-acepto'),
+                formMsg: document.getElementById('form-msg')
+            };
+
+            function clearErrors(){
+                Object.values(errs).forEach(e => { if(e) e.textContent = ''; });
+                for(const f of Object.values(fields)) if(f && f.setAttribute) f.removeAttribute('aria-invalid');
+            }
+
+            function validate(){
+                clearErrors();
+                let ok = true;
+
+                // Nombre y apellidos
+                if(!fields.nombre.value || fields.nombre.value.trim().length < 2){
+                    errs.nombre.textContent = 'Introduce un nombre válido (mín. 2 caracteres).';
+                    fields.nombre.setAttribute('aria-invalid','true'); ok = false;
+                }
+                if(!fields.apellido.value || fields.apellido.value.trim().length < 2){
+                    errs.apellido.textContent = 'Introduce apellidos válidos (mín. 2 caracteres).';
+                    fields.apellido.setAttribute('aria-invalid','true'); ok = false;
+                }
+
+                // Email
+                if(!fields.email.value){
+                    errs.email.textContent = 'El correo es obligatorio.';
+                    fields.email.setAttribute('aria-invalid','true'); ok = false;
+                } else {
+                    // simple regex for basic email format
+                    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if(!re.test(fields.email.value)){
+                        errs.email.textContent = 'Introduce un correo válido.';
+                        fields.email.setAttribute('aria-invalid','true'); ok = false;
+                    }
+                }
+
+                // Teléfono (si hay valor, validar patrón)
+                if(fields.telefono.value){
+                    const p = new RegExp(fields.telefono.getAttribute('pattern'));
+                    if(!p.test(fields.telefono.value)){
+                        errs.telefono.textContent = 'Formato de teléfono inválido.';
+                        fields.telefono.setAttribute('aria-invalid','true'); ok = false;
+                    }
+                }
+
+                // Fecha no pasada
+                if(!fields.fecha.value){
+                    errs.fecha.textContent = 'Indica una fecha de disponibilidad.';
+                    fields.fecha.setAttribute('aria-invalid','true'); ok = false;
+                } else {
+                    const sel = new Date(fields.fecha.value);
+                    const today = new Date(); today.setHours(0,0,0,0);
+                    if(isNaN(sel.getTime()) || sel < today){
+                        errs.fecha.textContent = 'La fecha no puede ser anterior a hoy.';
+                        fields.fecha.setAttribute('aria-invalid','true'); ok = false;
+                    }
+                }
+
+                // Duración
+                if(!fields.duracion.value){
+                    errs.duracion.textContent = 'Selecciona la duración de tu disponibilidad.';
+                    fields.duracion.setAttribute('aria-invalid','true'); ok = false;
+                }
+
+                // Al menos una habilidad
+                const someSkill = fields.skills.some(chk => chk.checked);
+                if(!someSkill){
+                    errs.skills.textContent = 'Marca al menos una habilidad o interés.';
+                    ok = false;
+                }
+
+                // Acepto
+                if(!fields.acepto.checked){
+                    errs.acepto.textContent = 'Debes aceptar las normas para enviar la solicitud.';
+                    fields.acepto.setAttribute('aria-invalid','true'); ok = false;
+                }
+
+                return ok;
+            }
+
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                errs.formMsg.textContent = '';
+                if(!validate()) return;
+
+                // Simular envío (aquí iría fetch/ajax a backend)
+                const data = new FormData(form);
+                const selectedSkills = data.getAll('skills');
+                const summary = {
+                    nombre: data.get('nombre') + ' ' + data.get('apellido'),
+                    email: data.get('email'),
+                    telefono: data.get('telefono') || 'No facilitado',
+                    fecha: data.get('fecha'),
+                    duracion: data.get('duracion'),
+                    skills: selectedSkills.join(', '),
+                    preferencias: data.getAll('preferencias').join(', ') || 'Sin preferencia',
+                    experiencia: data.get('experiencia') || 'No facilitada'
+                };
+
+                // Mostrar mensaje de éxito y resumen breve
+                errs.formMsg.innerHTML = '<span class="success">Solicitud enviada. ¡Gracias por ofrecerte como voluntario!</span>';
+                // Opción: mostrar resumen en consola (no enviar datos a servidor aquí)
+                console.log('Voluntario:', summary);
+
+                // Reset del formulario después de envío simulado
+                form.reset();
+                // limpiar posibles errores
+                clearErrors();
+            });
+
+            // Validación en tiempo real mínima
+            ['nombre','apellido','email','telefono','fecha','duracion'].forEach(id=>{
+                const el = document.getElementById(id);
+                if(!el) return;
+                el.addEventListener('input', ()=> {
+                    const errEl = document.getElementById('err-'+id);
+                    if(errEl) errEl.textContent = '';
+                    el.removeAttribute('aria-invalid');
+                });
+            });
+
+            // Validar skills al cambiar
+            fields.skills.forEach(chk=>chk.addEventListener('change', ()=> { errs.skills.textContent=''; }));
+
+            // Accessibility: focus en primer error al submit
+            form.addEventListener('invalid', (ev) => {
+                ev.preventDefault();
+                const firstInvalid = form.querySelector('[aria-invalid="true"],:invalid');
+                if(firstInvalid && typeof firstInvalid.focus === 'function') firstInvalid.focus();
+            }, true);
+        })();
+    </script>
+</body>
+</html>
